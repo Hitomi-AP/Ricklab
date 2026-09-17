@@ -10,7 +10,7 @@ ESP32 DevKit V1 (30 pins) + LCD 16×2 + Joystick Elegoo
 |---|---|---|---|
 | 1 — VSS | GND | GND | |
 | 2 — VDD | Alimentation | 5V | |
-| 3 — V0 | Contraste | Résistance → GND | 470Ω à 2kΩ ⚠️ |
+| 3 — V0 | Contraste | Résistance → GND | 2kΩ ⚠️ |
 | 4 — RS | Commande | D25 | GPIO 25 |
 | 5 — RW | Lecture/écriture | GND | |
 | 6 — E | Enable | D26 | GPIO 26 |
@@ -25,7 +25,7 @@ ESP32 DevKit V1 (30 pins) + LCD 16×2 + Joystick Elegoo
 | 15 — A | Rétroéclairage + | 5V | |
 | 16 — K | Rétroéclairage − | GND | |
 
-> ⚠️ **Ne jamais brancher V0 directement sur GND** — utiliser une résistance pour régler le contraste.
+> ⚠️ **Ne jamais brancher V0 directement sur GND** — utiliser une résistance pour régler le contraste.(entre 470Ω à 2kΩ pour choisir le contraste )
 
 > 🚨 **Ne jamais utiliser GPIO 12 (D12)** pour le LCD — strapping pin, cause des problèmes au démarrage.
 
@@ -36,12 +36,11 @@ ESP32 DevKit V1 (30 pins) + LCD 16×2 + Joystick Elegoo
 | Joystick | Branché sur | Note |
 |---|---|---|
 | GND | GND | |
-| VCC | 3.3V | ⚠️ Pas 5V ! |
+| VCC | 5V |
 | VRx | D34 | GPIO 34 |
 | VRy | D35 | GPIO 35 |
 | SW | D32 | GPIO 32 |
 
-> ⚠️ **VCC joystick sur 3.3V obligatoire** — les sorties VRx/VRy vont directement dans l'ESP32, qui ne tolère pas le 5V.
 
 ---
 

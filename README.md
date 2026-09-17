@@ -97,7 +97,6 @@ excuse-generator/
 ## ⚠️ Points importants
 
 - **GPIO 12** est un strapping pin sur l'ESP32 — ne pas l'utiliser pour le LCD
-- **VCC du joystick** doit être branché sur **3.3V** (pas 5V) pour protéger l'ESP32
 - **V0 du LCD** doit avoir une résistance vers GND (pas un fil direct) pour le contraste
 - Les excuses sont limitées à **32 caractères** (2 lignes × 16 caractères)
 
@@ -111,7 +110,7 @@ excuse-generator/
 | Texte bizarre / aléatoire | Vérifier l'ordre des fils D4–D7 |
 | Rien ne s'affiche | Vérifier 5V sur VDD et rétroéclairage |
 | Joystick ne répond pas | Vérifier les seuils `SEUIL_*` avec le moniteur série |
-| ESP32 ne boote pas | Vérifier que GPIO 12 n'est pas utilisé |
+| ESP32 ne boote pas | Vérifier que GPIO 12 n'est pas utilisé ou essayer de débrancher puis rebrancher le câble usb C|
 
 ---
 
