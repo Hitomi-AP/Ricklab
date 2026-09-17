@@ -20,7 +20,7 @@ Un générateur d'excuses aléatoires piloté par joystick, affiché sur un écr
 excuse-generator/
 ├── README.md
 ├── BRANCHEMENT.md
-└── excuse_generator.ino
+└── main.c
 ```
 
 ---
@@ -97,8 +97,8 @@ excuse-generator/
 ## ⚠️ Points importants
 
 - **GPIO 12** est un strapping pin sur l'ESP32 — ne pas l'utiliser pour le LCD
-- **V0 du LCD** doit avoir une résistance vers GND (pas un fil direct) pour le contraste
-- Les excuses sont limitées à **32 caractères** (2 lignes × 16 caractères)
+- **V0 du LCD** doit avoir une résistance vers GND (pas un fil direct) pour la modification du contraste
+- Les excuses sont limitées à **32 caractères** (2 lignes × 16 caractères sur l'écran LCD)
 
 ---
 
@@ -117,3 +117,7 @@ excuse-generator/
 ## 👤 Auteur
 
 Projet réalisé avec ESP32 + Arduino IDE.
+Alexis Pires,
+Loic Maitre--Legrand,
+Corentin Monge, 
+Yassin Abdou
